@@ -76,9 +76,9 @@ function printBill() {
         modalElement.innerHTML = `
         <tr>
             <td>uberX</td>
-            <td>1 km</td>
+            <td>${soKM} km</td>
             <td>8000</td>
-            <td>8000</td>
+            <td>${soKM * 8000}</td>
         </tr>
         <tr>
             <td>Thời gian chờ</td>
@@ -102,9 +102,9 @@ function printBill() {
         </tr>
         <tr>
             <td>uberX</td>
-            <td>19 km</td>
+            <td>${soKM - 1} km</td>
             <td>12000</td>
-            <td>${19 * 12000}</td>
+            <td>${(soKM - 1) * 12000}</td>
         </tr>
         <tr>
             <td>Thời gian chờ</td>
@@ -155,21 +155,165 @@ function printBill() {
     case "uberSUV":
       if (soKM <= 1) {
         thanhTien = soKM * 9000 + thoiGianCho * 3000;
+        modalElement.innerHTML = `
+        <tr>
+            <td>uberX</td>
+            <td>${soKM} km</td>
+            <td>8000</td>
+            <td>${soKM * 9000}</td>
+        </tr>
+        <tr>
+            <td>Thời gian chờ</td>
+            <td>${thoiGianCho} phút</td>
+            <td>2000</td>
+            <td>${thoiGianCho * 3000}</td>
+        </tr>
+        <tr>
+            <td colspan="3">Total</td>
+            <td>${thanhTien}</td>
+        </tr>
+        `;
       } else if (soKM > 1 && soKM <= 20) {
         thanhTien = 9000 + (soKM - 1) * 14000 + thoiGianCho * 3000;
+        modalElement.innerHTML = `
+        <tr>
+            <td>uberX</td>
+            <td>1 km</td>
+            <td>9000</td>
+            <td>9000</td>
+        </tr>
+        <tr>
+            <td>uberX</td>
+            <td>${soKM - 1} km</td>
+            <td>12000</td>
+            <td>${(soKM - 1) * 14000}</td>
+        </tr>
+        <tr>
+            <td>Thời gian chờ</td>
+            <td>${thoiGianCho} phút</td>
+            <td>2000</td>
+            <td>${thoiGianCho * 3000}</td>
+        </tr>
+        <tr>
+            <td colspan="3">Total</td>
+            <td>${thanhTien}</td>
+        </tr>
+        `;
       } else if (soKM > 20) {
         thanhTien =
           9000 + 20 * 14000 + (soKM - 21) * 10000 + thoiGianCho * 3000;
+        modalElement.innerHTML = `
+          <tr>
+              <td>uberX</td>
+              <td>1 km</td>
+              <td>9000</td>
+              <td>9000</td>
+          </tr>
+          <tr>
+              <td>uberX</td>
+              <td>19 km</td>
+              <td>14000</td>
+              <td>${19 * 14000}</td>
+          </tr>
+          <tr>
+              <td>uberX</td>
+              <td>${soKM - 20} km</td>
+              <td>10000</td>
+              <td>${(soKM - 20) * 10000}</td>
+          </tr>
+          <tr>
+              <td>Thời gian chờ</td>
+              <td>${thoiGianCho} phút</td>
+              <td>2000</td>
+              <td>${thoiGianCho * 3000}</td>
+          </tr>
+          <tr>
+              <td colspan="3">Total</td>
+              <td>${thanhTien}</td>
+          </tr>
+          `;
       }
       break;
     case "uberBlack":
       if (soKM <= 1) {
         thanhTien = soKM * 10000 + thoiGianCho * 4000;
+        modalElement.innerHTML = `
+        <tr>
+            <td>uberX</td>
+            <td>${soKM} km</td>
+            <td>8000</td>
+            <td>${soKM * 10000}</td>
+        </tr>
+        <tr>
+            <td>Thời gian chờ</td>
+            <td>${thoiGianCho} phút</td>
+            <td>2000</td>
+            <td>${thoiGianCho * 4000}</td>
+        </tr>
+        <tr>
+            <td colspan="3">Total</td>
+            <td>${thanhTien}</td>
+        </tr>
+        `;
       } else if (soKM > 1 && soKM <= 20) {
         thanhTien = 10000 + (soKM - 1) * 16000 + thoiGianCho * 4000;
+        modalElement.innerHTML = `
+        <tr>
+            <td>uberX</td>
+            <td>1 km</td>
+            <td>10000</td>
+            <td>10000</td>
+        </tr>
+        <tr>
+            <td>uberX</td>
+            <td>${soKM - 1} km</td>
+            <td>12000</td>
+            <td>${(soKM - 1) * 16000}</td>
+        </tr>
+        <tr>
+            <td>Thời gian chờ</td>
+            <td>${thoiGianCho} phút</td>
+            <td>2000</td>
+            <td>${thoiGianCho * 4000}</td>
+        </tr>
+        <tr>
+            <td colspan="3">Total</td>
+            <td>${thanhTien}</td>
+        </tr>
+        `;
       } else if (soKM > 20) {
         thanhTien =
           10000 + 20 * 16000 + (soKM - 21) * 14000 + thoiGianCho * 4000;
+        modalElement.innerHTML = `
+        <tr>
+            <td>uberX</td>
+            <td>1 km</td>
+            <td>10000</td>
+            <td>10000</td>
+        </tr>
+        <tr>
+            <td>uberX</td>
+            <td>19 km</td>
+            <td>12000</td>
+            <td>${19 * 16000}</td>
+        </tr>
+        <tr>
+            <td>uberX</td>
+            <td>${soKM - 20} km</td>
+            <td>10000</td>
+            <td>${(soKM - 20) * 14000}</td>
+        </tr>
+        <tr>
+            <td>Thời gian chờ</td>
+            <td>${thoiGianCho} phút</td>
+            <td>2000</td>
+            <td>${thoiGianCho * 4000}</td>
+        </tr>
+        <tr>
+            <td colspan="3">Total</td>
+            <td>${thanhTien}</td>
+        </tr>
+        `;
       }
       break;
   }
