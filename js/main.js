@@ -1,10 +1,10 @@
 /**
  * @return: total of money of user
  */
-function getTypeCar(typeCar) {
+function getTypeCar() {
   var uberX = document.getElementById("uberX").checked;
   var uberSUV = document.getElementById("uberSUV").checked;
-  var uberBlack = document.getElementById("uberX").checked;
+  var uberBlack = document.getElementById("uberBlack").checked;
   if (!uberX && !uberSUV && !uberBlack) {
     alert("Vui lòng chọn loại xe");
   } else {
@@ -12,8 +12,9 @@ function getTypeCar(typeCar) {
       return "uberX";
     } else if (uberSUV) {
       return "uberSUV";
+    } else {
+      return "uberBlack";
     }
-    return uberBlack;
   }
 }
 
