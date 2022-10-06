@@ -87,7 +87,7 @@ function printBill() {
             <td>2000</td>
             <td>${thoiGianCho * 2000}</td>
         </tr>
-        <tr>
+        <tr ">
             <td colspan="3">Total</td>
             <td>${thanhTien}</td>
         </tr>
@@ -113,7 +113,7 @@ function printBill() {
             <td>2000</td>
             <td>${thoiGianCho * 2000}</td>
         </tr>
-        <tr>
+        <tr >
             <td colspan="3">Total</td>
             <td>${thanhTien}</td>
         </tr>
@@ -146,7 +146,7 @@ function printBill() {
             <td>2000</td>
             <td>${thoiGianCho * 2000}</td>
         </tr>
-        <tr>
+        <tr >
             <td colspan="3">Total</td>
             <td>${thanhTien}</td>
         </tr>
@@ -169,7 +169,7 @@ function printBill() {
             <td>2000</td>
             <td>${thoiGianCho * 3000}</td>
         </tr>
-        <tr>
+        <tr >
             <td colspan="3">Total</td>
             <td>${thanhTien}</td>
         </tr>
@@ -195,7 +195,7 @@ function printBill() {
             <td>2000</td>
             <td>${thoiGianCho * 3000}</td>
         </tr>
-        <tr>
+        <tr >
             <td colspan="3">Total</td>
             <td>${thanhTien}</td>
         </tr>
@@ -228,7 +228,7 @@ function printBill() {
               <td>2000</td>
               <td>${thoiGianCho * 3000}</td>
           </tr>
-          <tr>
+          <tr >
               <td colspan="3">Total</td>
               <td>${thanhTien}</td>
           </tr>
@@ -251,7 +251,7 @@ function printBill() {
             <td>2000</td>
             <td>${thoiGianCho * 4000}</td>
         </tr>
-        <tr>
+        <tr >
             <td colspan="3">Total</td>
             <td>${thanhTien}</td>
         </tr>
@@ -277,7 +277,7 @@ function printBill() {
             <td>2000</td>
             <td>${thoiGianCho * 4000}</td>
         </tr>
-        <tr>
+        <tr >
             <td colspan="3">Total</td>
             <td>${thanhTien}</td>
         </tr>
@@ -310,7 +310,7 @@ function printBill() {
             <td>2000</td>
             <td>${thoiGianCho * 4000}</td>
         </tr>
-        <tr>
+        <tr >
             <td colspan="3">Total</td>
             <td>${thanhTien}</td>
         </tr>
